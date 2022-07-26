@@ -7,6 +7,8 @@ import java.util.Set;
 
 public class Dev {
      private String nome;
+
+     //Polimorfismo
      private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
      private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
@@ -56,7 +58,7 @@ public class Dev {
     public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
         this.conteudosConcluidos = conteudosConcluidos;
     }
-
+    // Criando equals and hashcode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
